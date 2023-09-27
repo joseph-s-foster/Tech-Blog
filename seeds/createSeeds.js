@@ -11,7 +11,7 @@ const RANDOMUSERS = [];
 function createRandomUser() {
     return {
 
-        name: faker.internet.userName(),
+        username: faker.internet.userName(),
         email: faker.internet.email(),
         password: faker.internet.password(),
     };
@@ -49,7 +49,7 @@ function createRandomComment() {
         comment: faker.lorem.paragraphs(1),
         date_created: faker.date.between('2020-01-01T00:00:00.000Z', '2023-01-01T00:00:00.000Z'),
         user_id: Math.ceil(Math.random() * RANDOMUSERS.length),
-        post_id: Math.ceil(Math.random() * POSTS.length)
+        post_id: Math.ceil(Math.random() * 24)
     };
 }
 
