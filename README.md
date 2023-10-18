@@ -49,5 +49,5 @@
   https://t3ch-bl0g-5d6f38a434db.herokuapp.com/
 
   ## Screenshot of Application
-  ![Screenshot of application](./public/Screenshot.png)
+  ![Screenshot of application](./Screenshot.png)
 
