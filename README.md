@@ -50,4 +50,3 @@
 
   ## Screenshot of Application
   ![Screenshot of application](./Screenshot.png)
-
