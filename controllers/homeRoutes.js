@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
     const posts = postData.map((post) => post.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render("homepage", { posts, loggedIn: req.session.logged_in });
+    res.render("homepage", { posts, logged_in: req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -43,6 +43,22 @@ router.get("/dashboard", withAuth, async (req, res) => {
     );
 
     res.render("dashboard", {
+      posts,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get("/edit/:id", withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const postData = await Post.findByPk(req.params.id);
+
+    const posts = postData.get({ plain:true });
+
+    res.render("edit", {
       posts,
       logged_in: req.session.logged_in,
     });
