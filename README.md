@@ -1,3 +1,5 @@
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
 # Tech-Blog
 
   ## Description
@@ -26,7 +28,12 @@
   - [Link](#link-to-site)
 
   ## Installation
-  Via mysql2, sequelize, handlebars and dotenv
+  - bcrypt
+  - dotenv
+  - express
+  - express-handlebars
+  - mysql2
+  - sequelize
 
   ## Usage
   Via live Heroku deployment
@@ -39,6 +46,7 @@
   For additional works, please visit [https://github.com/joseph-s-foster]
 
   ## Link to Site
+  
 
   ## Screenshot of Application
   ![Screenshot of application](./)
