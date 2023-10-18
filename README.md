@@ -46,8 +46,8 @@
   For additional works, please visit [https://github.com/joseph-s-foster]
 
   ## Link to Site
-  
+  https://t3ch-bl0g-5d6f38a434db.herokuapp.com/
 
   ## Screenshot of Application
-  ![Screenshot of application](./)
+  ![Screenshot of application](./public/Screenshot.png)
 
