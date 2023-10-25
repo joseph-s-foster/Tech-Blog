@@ -1,0 +1,43 @@
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <p>{{body}}</p>
+  <p>Created by {{user.username}} on {{format_date date_created}}</p>
+</div>
+
+<div class="row mt-4">
+  <div class="col-md-12">
+    <h3>Add comment:</h3>
+
+    <form class="form new-project-form">
+      <div class="form-group">
+        <input class="form-input" type="hidden" id="post-id" value="{{id}}" />
+      </div>
+
+      <div class="form-group">
+        <textarea class="form-input" id="comment"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Post</button>
+      </div>
+    </form>
+  </div>
+
+  {{#if comments.length}}
+    <div class="col-md-12 project-list">
+      <h3>Comments:</h3>
+
+      {{#each comments}}
+        <div class="row mb-2">
+          <p>{{comment}}</p>
+          <br/>
+          <p>Created by {{user.username}} on {{format_date date_created}}</p>
+          <div class="col-md-12">
+          </div>
+
+        </div>
+      {{/each}}
+    </div>
+  {{/if}}
+</div>
+
+<script src="/js/comment.js"></script>
